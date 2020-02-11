@@ -6,7 +6,7 @@
 				} */
 
 body            {letter-spacing: 0.1px; padding: 0; margin: 0; font-family: 'Share Tech Mono', Monospace, Courier;
-                font-weight: 400; font-size: 17px; color: #c8c8c8; background: #222;}
+                font-weight: 400; font-size: 17px; color: #c8c8c8; background: #111;}
 html            {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 pre             {padding: 0; margin: 0 0 50px 0;}
 
@@ -27,10 +27,31 @@ a:hover
     color: rgb(85, 0, 0);
     background: tomato;
     box-shadow: 0 0 10px tomato, 0 0 40px tomato, 0 0 80px tomato;
-    /* transition-delay: 1s; */
+    transition-delay: 0.1s;
 }
 p               {padding: 0; margin: 10px 0 30px 0;}
 
+.at
+{
+  color: tomato;
+  display:inline;
+}
+#email:hover .at
+{
+  color: rgb(85, 0, 0);
+  transition-delay: 0.1s;
+}
+
+ul li
+{
+  list-style-type: none;
+}
+
+.nav li
+{
+  margin: 20px 10px;
+  float: left;
+}
 
 @media 			only screen and (max-width: 900px)
 {
@@ -45,7 +66,7 @@ body			{font-size: 19px;}
     left: 0;
     right: 0;
     margin: auto;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
 }
 
