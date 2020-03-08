@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- <meta http-equiv="refresh" content="0; url=https://usamasubhani.github.io/"> -->
         <link rel="stylesheet" href="bulma.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-        
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+		<script src="hamburger.js"></script>
         <style>
             img {
                 position: absolute;
@@ -20,22 +20,34 @@
         </style>
 	</head>
 
-	<body>
-        <img src="img/tool-bg.jpeg" alt="">
-        <ul class="nav" style="list-style-type: none;">
-			<li><a href="index.html" class="home">home</a> <span style="color: tomato ;display:inline">//</span> </li> 
-			<li><a href="tools.html" class="tools">tools</a> <span style="color: tomato ;display:inline">//</span> </li>
-			<li><a href="skills.html" class="skills">skills</a></li>
-
-			<li class="right"><a href="https://www.linkedin.com/in/usamasubhani/" target="_blank">LinkdedIn</a> </li>
-			
-			<li class="right"><a href="https://twitter.com/basedusama" target="_blank">Twitter</a> <span style="color: tomato ;display:inline">//</span></li>
-			<li class="right"><a href="Resume.html">Résumé</a> <span style="color: tomato ;display:inline">//</span></li>
-			<li class="right"><a href="https://github.com/usamasubhani" target="_blank">Github</a> <span style="color: tomato ;display:inline">//</span></li>
-		</ul>
+	<body class="hero is-fullheight">
+        <!-- <img src="img/tool-bg.jpeg" alt=""> -->
+        <nav>
+            <a role="button" class="navbar-burger" style="color: tomato;" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+              
+              <div class="navbar-menu is-fullheight" id="navMenu">
+                <div class="navbar-start">
+                  <div class="navbar-item"><a href="index.html" class="home neon">home </a></div>
+                  <div class="navbar-item"><a href="tools.html" class="tools neon">tools</a> </div>
+                  <div class="navbar-item"><a href="skills.html" class="skills neon">skills</a></div>
+                </div>
+                <div class="navbar-end">
+                    
+                    <div class="navbar-item"><a href="https://github.com/usamasubhani" class="neon" target="_blank">Github</a></div>
+                    <div class="navbar-item"><a href="Resume.html" class="neon">Résumé</a></div>
+                    <div class="navbar-item"><a href="https://twitter.com/basedusama" class="neon" target="_blank">Twitter</a></div>
+                    <div class="navbar-item"><a href="https://www.linkedin.com/in/usamasubhani/" class="linkedin neon" target="_blank">LinkdedIn</a> </div>
+                </div>
+              </div>
+            </nav>
 		<div class="main">
-            <h1 id="tools">Tools</h1>
-        <h3 id="soft">Soft</h3>
+            <h1 class="title" id="tools">Tools</h1>
+        <h3 id="soft">Soft:</h3>
+        <br>
         <ul style="line-height: 30px; list-style-type: none;">
         <li>Operating System: Arch Linux</li>
         <li>Desktop Environment: XFCE</li>
@@ -45,7 +57,9 @@
         <li>Wireframing: Figma</li>
         <li>Documentation: LaTeX + Markdown + Pandoc</li>
         </ul>
-        <h3 id="hard">Hard</h3>
+        <br>
+        <h3 id="hard">Hard:</h3>
+        <br>
         <ul style="line-height: 30px; list-style-type: none;">
         <li>Laptop: ThinkPad t430s</li>
         </ul>

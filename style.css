@@ -11,7 +11,7 @@ body            {letter-spacing: 0.1px; padding: 0; margin: 0; font-family: 'Sha
 pre             {padding: 0; margin: 0 0 50px 0;}
 
 /* a               {text-decoration: none; color: #fff;} */
-a{position: relative;
+.neon{position: relative;
   /* display: inline-block; */
   padding: 5px 3px;
   color: #c8c8c8;
@@ -22,13 +22,48 @@ a{position: relative;
   overflow: hidden;
   transition: 0.2s;
 }
-a:hover
+.neon:hover
 {
     color: rgb(85, 0, 0);
     background: tomato;
     box-shadow: 0 0 10px tomato, 0 0 40px tomato, 0 0 80px tomato;
     transition-delay: 0.1s;
+    border-radius: 10px;
 }
+
+.navbar-item:after {
+  content: '//';
+  /* padding: 0 1rem; */
+  padding-left: 15px;
+  color: tomato;
+}
+
+.navbar-item:last-child:after {
+  content: '';
+}
+
+.is-active .navbar-item:after {
+  content: '';
+  padding: 0 1rem;
+}
+
+.is-active .navbar-item:before {
+  content: '> ';
+  padding: 0 1rem;
+  color: tomato;
+}
+
+.navbar-menu{
+  background-color: #000;
+}
+
+/* .navbar-item:hover
+{
+    color: rgb(85, 0, 0);
+    background: tomato;
+    box-shadow: 0 0 10px tomato, 0 0 40px tomato, 0 0 80px tomato;
+    transition-delay: 0.1s;
+} */
 p               {padding: 0; margin: 10px 0 30px 0;}
 
 .at
@@ -39,38 +74,27 @@ p               {padding: 0; margin: 10px 0 30px 0;}
 #email:hover .at
 {
   color: rgb(85, 0, 0);
-  transition-delay: 0.1s;
+  /* transition-delay: 0.1s; */
 }
 
-ul
-{
-  
-}
 
-.nav li
-{
-  margin: 20px 5px;
-  float: left;
-}
-
-.nav .right {
-  float: right;
-}
-
-@media 			only screen and (max-width: 900px)
+/* @media 			only screen and (max-width: 900px)
 {
 img 			{width: 100%;}
 body			{font-size: 19px;}
-}
+} */
 
 .main{
-    position: absolute;
+    /* display: grid;
+    position: absolute; */
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    width: 500px;
-    height: 400px;
+    max-width: 500px;
+    /* height: 400px; */
 }
-
+.title{
+  color: #c8c8c8;
+}
