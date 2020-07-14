@@ -215,7 +215,7 @@
       padding: 5rem;
     }
     .projects-section .project-text hr {
-      border-color: white;
+      border-color: tomato;
       border-width: .25rem;
       width: 30%;
     }
